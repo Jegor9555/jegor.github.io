@@ -6,16 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>☺☺☺</h1>
+    
+    <h1 id="a">☻☻☻</h1>
+
+    <script>
+    
+   window.open("index.html", "_blank","height=400");
+    window.open("index.html", "_blank");
+
+   let flag = true;
+
+setInterval(() => {
+  if(flag) {
+    document.getElementById("a").innerHTML = "☻☻☻";
+  } else {
+    document.getElementById("a").innerHTML = "☺☺☺";
+  }
+  flag = !flag;
+}, 500);
+
+    
+ 
+</script>
 </body>
 </html>
 
-<script>
-    
-    window.open("index.html", "_blank","height=100px","width=100px");
-    window.open("index.html", "_blank");
- 
-</script>
+
 <style>
     h1{
         font-size: 100px;
